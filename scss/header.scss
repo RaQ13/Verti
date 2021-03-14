@@ -1,0 +1,57 @@
+@import "../general";
+@import "../variables";
+@import "../fonts";
+
+.container {
+  .col-sm-12 {
+  @include center;
+    .header-logo{
+      font-family: "Open Sans", sans-serif;
+      font-size: 40px;
+      background-color: $color-logo;
+      padding: 10px;
+      border-radius: 5px;
+      color: white;
+    }
+
+}
+}
+
+.header-content {
+  .col-sm-12 {
+    @include center;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    color: $color-text;
+    p {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 35px;
+      margin-bottom: 40px;
+      width: 70%;
+    }
+    button {
+      font-size: 30px;
+      font-weight: 600;
+      height: 60px;
+      width: 95%;
+      background-color: $color-button;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      color: white;
+      i {
+        margin-right: 15px;
+      }
+    }
+    button:last-child {
+      margin-bottom: 40px;
+      background-color: $color-bg;
+      color: $color-text;
+    }
+  }
+}
+h1 {
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: 800;
+}
