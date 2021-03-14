@@ -22,7 +22,7 @@
 a {
   text-decoration: none;
   text-align: center;
-  width: 100%;
+  margin: auto;
   order: 2;
 }
 
@@ -104,22 +104,19 @@ h1 {
   text-decoration: none;
 }
 
-/* menu */
-
 .header .menu {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
 }
 
-/* menu icon */
 
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
   float: right;
   padding: 28px 20px;
-  position: relative;
+  position: absolute;
   user-select: none;
 }
 
@@ -127,7 +124,7 @@ h1 {
   background: #333;
   display: block;
   height: 2px;
-  position: relative;
+  position: absolute;
   transition: background .2s ease-out;
   width: 18px;
 }
@@ -151,7 +148,6 @@ h1 {
   top: -5px;
 }
 
-/* menu btn */
 
 .header .menu-btn {
   display: none;
@@ -177,7 +173,6 @@ h1 {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
-
 
 @media (min-width: $screen-sm) {
   .header li {

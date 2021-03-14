@@ -30,7 +30,7 @@
 a {
   text-decoration: none;
   text-align: center;
-  width: 100%;
+  margin: auto;
   order: 2;
 }
 
@@ -113,20 +113,18 @@ h1 {
   text-decoration: none;
 }
 
-/* menu */
 .header .menu {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
 }
 
-/* menu icon */
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
   float: right;
   padding: 28px 20px;
-  position: relative;
+  position: absolute;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -137,7 +135,7 @@ h1 {
   background: #333;
   display: block;
   height: 2px;
-  position: relative;
+  position: absolute;
   transition: background 0.2s ease-out;
   width: 18px;
 }
@@ -161,7 +159,6 @@ h1 {
   top: -5px;
 }
 
-/* menu btn */
 .header .menu-btn {
   display: none;
 }
