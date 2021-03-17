@@ -35,8 +35,14 @@ aside {
     }
   }
 }
-.image {
-  height: 150px;
+.stuff {
+  .container {
+    .row {
+  .image {
+    height: 150px;
+  }
+  }
+  }
 }
 .picture {
   width: 100%;
@@ -44,4 +50,35 @@ aside {
 }
 .more-btn {
   margin-top: 30px;
+}
+.random {
+  p {
+    width: 70%;
+  }
+  display: flex;
+  flex-direction: column;
+}
+.more-btn:after {
+  display: none;
+}
+.info {
+  .container {
+    .row {
+      position: relative;
+      &:after {
+        @media (max-width: $screen-sm) {
+          content: "";
+          width: 100%;
+          height: 3px;
+          position: absolute;
+          bottom: 40px;
+          left: 0;
+          background-color: lightgray;
+        }
+      }
+      .random {
+        margin-bottom: 80px;
+      }
+    }
+  }
 }

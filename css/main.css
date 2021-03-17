@@ -529,7 +529,7 @@ aside button i {
   }
 }
 
-.image {
+.stuff .container .row .image {
   height: 150px;
 }
 
@@ -540,5 +540,35 @@ aside button i {
 
 .more-btn {
   margin-top: 30px;
+}
+
+.random {
+  display: flex;
+  flex-direction: column;
+}
+.random p {
+  width: 70%;
+}
+
+.more-btn:after {
+  display: none;
+}
+
+.info .container .row {
+  position: relative;
+}
+@media (max-width: 806px) {
+  .info .container .row:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    background-color: lightgray;
+  }
+}
+.info .container .row .random {
+  margin-bottom: 80px;
 }
 /*# sourceMappingURL=main.css.map */
