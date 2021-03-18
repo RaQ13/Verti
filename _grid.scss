@@ -22,14 +22,11 @@ body {
 
    [class*="col-"] {
     box-sizing: border-box;
-    padding: $gap;
     min-height: 1px;
     width: 100%;
     border: 1px solid black;
   }
     .row {
-      margin-left: -$gap;
-      margin-right: -$gap;
       display: flex;
       flex-wrap: wrap;
     }
