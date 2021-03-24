@@ -21,9 +21,7 @@
 
 a {
   text-decoration: none;
-  text-align: center;
   margin: auto;
-  order: 2;
 }
 
 .header-content {
@@ -189,4 +187,49 @@ h1 {
   .header .menu-icon {
     display: none;
   }
+}
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+// for tablet
+
+@media (min-width: $screen-sm) and (max-width: $screen-lg) {
+  .header {
+    @include center;
+    justify-content: space-between;
+    ul{
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .header-logo {
+      margin: 0;
+    }
+  }.header-content {
+
+  .header-main {
+    display: flex;
+    flex-direction: row;
+    .left {
+      margin-left: 40px;
+      display: block;
+      text-align: left;
+      p {
+        text-align: left;
+        width: 80%;
+      }
+    }
+    .right {
+      margin-top: 35px;
+      margin-right: 40px;
+    }
+    button {
+      width: 100%;
+    }
+  }
+}
+
 }
