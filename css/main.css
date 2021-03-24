@@ -1085,6 +1085,8 @@ aside button i {
 .picture {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .more-btn {
@@ -1123,5 +1125,24 @@ aside button i {
 
 .Stuff-header {
   margin: 20px 0;
+}
+
+@media (min-width: 1500px) {
+  .main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1024px;
+    padding: 0;
+  }
+  .main-section aside {
+    order: 2;
+  }
+  .main-section aside .continue-btn {
+    margin-top: -15px;
+  }
+  .main-section .stuff {
+    order: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */
