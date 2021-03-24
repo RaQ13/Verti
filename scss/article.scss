@@ -1,11 +1,11 @@
 .article-image {
   width: 100%;
   height: 600px;
-  @media (max-width: $screen-sm) {
+  @media (max-width: $screen-lg) {
     height: 351px;
   }
   @media (min-width: $screen-lg) {
-    height: 331px;
+    height: 351px;
   }
 }
 .image {
@@ -19,7 +19,7 @@ article {
   font-family: "Open Sans", sans-serif;
   line-height: 40px;
   margin: 0 40px;
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-sm){
     margin: 0;
   }
 

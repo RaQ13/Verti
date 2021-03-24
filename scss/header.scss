@@ -196,7 +196,7 @@ h1 {
 
 // for tablet
 
-@media (min-width: $screen-sm) and (max-width: $screen-lg) {
+@media (min-width: $screen-sm) {
   .header {
     @include center;
     justify-content: space-between;
@@ -231,5 +231,4 @@ h1 {
     }
   }
 }
-
 }
