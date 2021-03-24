@@ -1122,11 +1122,30 @@ aside button i {
 .info .container .row .random {
   margin-bottom: 80px;
 }
+.info .container .row .random p {
+  margin-top: 30px;
+  width: 50%;
+  text-decoration: underline;
+  line-height: 35px;
+}
+.info .container .row .stuff4 .icons i {
+  margin-top: 30px;
+  padding: 3px;
+  font-size: 40px;
+}
+.info .container .row .stuff4 p {
+  margin-top: 5px;
+}
 
 .Stuff-header {
   margin: 20px 0;
 }
 
+@media (max-width: 1024px) {
+  .stuff3, .stuff4 {
+    display: none;
+  }
+}
 @media (min-width: 1500px) {
   .main-section {
     display: flex;

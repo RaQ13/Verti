@@ -63,6 +63,10 @@ aside {
 .more-btn:after {
   display: none;
 }
+
+
+
+
 .info {
   .container {
     .row {
@@ -80,13 +84,40 @@ aside {
       }
       .random {
         margin-bottom: 80px;
+        p {
+          margin-top: 30px;
+          width: 50%;
+          text-decoration: underline;
+          line-height: 35px;
+        }
       }
+      .stuff4 {
+        .icons {
+          i {
+            margin-top: 30px;
+            padding: 3px;
+            font-size: 40px;
+          }
+        }
+        p {
+          margin-top: 5px;
+        }
+      }
+
     }
   }
 }
 .Stuff-header {
   margin: 20px 0;
 }
+//for mobile
+@media (max-width: $screen-md) {
+  .stuff3, .stuff4 {
+    display: none;
+  }
+}
+
+
 
 //for desktop
 
@@ -108,3 +139,4 @@ aside {
       }
     }
 }
+
