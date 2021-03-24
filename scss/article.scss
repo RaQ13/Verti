@@ -20,6 +20,7 @@ article {
   line-height: 40px;
   margin: 0 40px;
   @media (min-width: $screen-sm){
+    padding: 10px;
     margin: 0;
   }
 
